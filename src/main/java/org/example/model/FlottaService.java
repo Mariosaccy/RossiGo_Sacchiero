@@ -264,7 +264,7 @@ public class FlottaService {
         }
         utenti.add(u);
         Database db = Database.GetIstance();
-        db.insertUtente(u.getNome(), u., u.getEmail(), u.getCf(), u.getCredito());
+        db.insertUtente(u.getNome(), u.getCognome() , u.getEmail(), u.getCf(), u.getCredito());
     }
 
     public static void sbloccaVeicolo(String codice, String idUtente) throws Exception {
